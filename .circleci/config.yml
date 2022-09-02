@@ -17,6 +17,14 @@ jobs:
           command: |
             npm run frontend:install
       - run:
+          name: Build Front-End App
+          command: |
+            npm run frontend:build
+      - run:
           name: Install API Dependencies
           command: |
             npm run backend:install
+      - run:
+          name: Build BE
+          command: |
+            npm run backend:build
